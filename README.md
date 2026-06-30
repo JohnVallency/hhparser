@@ -12,6 +12,10 @@
 4. Запустите API `python -m uvicorn api:app --host 127.0.0.1 --port 8000`
 5. (Опционально) Экспортируйте топ-20 компаний в Excel `python export_excel.py`
 
+## Тестовые данные
+В репозитории так же сохранены тестовые данные [test_hhparser.db](test_hhparser.db) и [test_top_companies.xlsx](test_top_companies.xlsx) \
+_Данные актуальны на 30.06.2026_
+
 ## Настройка
 Подробная настройка описана в документации [Scrapy](https://docs.scrapy.org)
 
@@ -19,7 +23,7 @@
 - Ошибка 429 (Too Many Requests) - Увеличьте `DOWNLOAD_DELAY`(время задержки) в `settings.py`
 
 ## Возможности
-- Экспорт в различные форматы (JSON,CSV,JSON Lines, XML)
+- Экспорт в различные форматы (JSON, CSV, JSON Lines, XML)
 - Сохранение в базу данных SQLite
 - Доступ через HTTP-запросы (REST API)
 - Настройка скриптов
